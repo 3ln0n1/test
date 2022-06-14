@@ -1,0 +1,25 @@
+
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Phone</th>
+        <th scope="col">Address</th>
+        <th scope="col">Eliminar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let cliente of clientes">
+        <td>{{cliente.firstName}}</td>
+        <td>{{cliente.lastName}}</td>
+        <td>{{cliente.email}}</td>
+        <td>{{cliente.phone}}</td>
+        <td>{{cliente.address}}</td>
+        <button class="btn btn-danger" (click)="eliminar(cliente)">Eliminar</button>
+      </tr>
+      
+    </tbody>
+  </table>
+  <button type="button" [routerLink]="['/formclientes']">Agregar nuevo cliente</button>

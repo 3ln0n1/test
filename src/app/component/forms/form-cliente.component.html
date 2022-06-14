@@ -1,0 +1,11 @@
+<div class="col">
+    <p>Client</p>
+<form [formGroup]="formCliente">
+    <input type="text" class="form-control extra" formControlName="firstName" name="firstName" placeholder="First name">
+    <input type="text" class="form-control extra" formControlName="lastName" name="lastName" placeholder="Last name">
+    <input type="text" class="form-control extra" formControlName="email" name="email" placeholder="email">
+    <input type="text" class="form-control extra" formControlName="phone" name="phone" placeholder="Phone">
+    <input type="text" class="form-control extra" formControlName="address" name="address" placeholder="Address" >
+</form>
+<button (click)="guardar()">Save</button>
+</div>

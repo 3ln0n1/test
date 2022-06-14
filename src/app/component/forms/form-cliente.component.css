@@ -1,0 +1,10 @@
+div{
+    width: 300px;
+}
+form{
+   border: solid 1px #000;
+}
+.extra{
+    width: 120px;
+    margin: 15px;
+}
